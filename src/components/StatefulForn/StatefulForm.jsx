@@ -2,15 +2,20 @@ import { useState } from "react";
 
 const StatefulForm = () => {
     const [email, setEmail] = useState(null);
+    const [password, setPassword] = useState(null);
 
     const handleSubmit = e => {
         e.preventDefault();
         console.log(email);
     }
 
-    const handleEmailChange=e=>{
+    const handleEmailChange = e => {
         console.log(e.target.value);
         setEmail(e.target.value);
+    }
+
+    const handlePasswordChange = e => {
+        setPassword(e.target.value);
     }
     return (
         <div>
@@ -18,10 +23,12 @@ const StatefulForm = () => {
                 <input type="text" name="name" />
                 <br />
                 <input
-                    onChange={ handleEmailChange}
+                    onChange={handleEmailChange}
                     type="email" name="email" id="" />
                 <br />
-                <input type="password" name="password" />
+                <input
+                    onChange={handlePasswordChange}
+                    type="password" name="password" />
                 <br />
                 <input type="submit" value="Submit" />
             </form>
