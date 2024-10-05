@@ -1,12 +1,16 @@
 import { useState } from "react";
 
 const StatefulForm = () => {
-    const [email, setEmail] = useState(null)
-    const handleSubmit = e => {
+    const [email, setEmail] = useState(null);
 
+    const handleSubmit = e => {
+        e.preventDefault();
+        console.log(email);
     }
+
     const handleEmailChange=e=>{
-        console.log(e.target);
+        console.log(e.target.value);
+        setEmail(e.target.value);
     }
     return (
         <div>
