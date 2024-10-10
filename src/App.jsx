@@ -16,23 +16,28 @@ function App() {
   }
   return (
     <>
-      <h1>Vite + React</h1>
+      <h1>Form Master</h1>
       {/* <SimpleForm></SimpleForm> */}
       {/* <StatefulForm></StatefulForm> */}
       {/* <RefForm></RefForm> */}
       {/* <HookForm></HookForm> */}
       <ReusableForm formTitle={'Sign Up'}
         handleSubmit={handleSignUpSubmit}>
-<div>
-  <h2>Sign Up</h2>
-  <p>Please sign up right now</p>
-</div>
-
-        </ReusableForm>
+        <div>
+          <h2>Sign Up</h2>
+          <p>Please sign up right now</p>
+        </div>
+      </ReusableForm>
       <ReusableForm
         formTitle={'Profile Update'}
         handleSubmit={handleUpdateProfile}
-        submitBtnText='Update'></ReusableForm>
+        submitBtnText='Update'>
+<div>
+  <h2>Update Profile</h2>
+  <p>Always keep your profile update</p>
+</div>
+
+        </ReusableForm>
     </>
   )
 }
