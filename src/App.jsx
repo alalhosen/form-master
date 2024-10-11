@@ -1,5 +1,6 @@
 import './App.css'
-import ReusableForm from './components/ReusableForm/ReusableForm'
+import Grandpa from './components/GrandPa/GrandPa'
+// import ReusableForm from './components/ReusableForm/ReusableForm'
 // import HookForm from './components/HookForm/HookForm'
 // import RefForm from './components/RefForm/RefForm'
 // import StatefulForm from './components/StatefulForn/StatefulForm'
@@ -7,21 +8,24 @@ import ReusableForm from './components/ReusableForm/ReusableForm'
 
 function App() {
 
-  const handleSignUpSubmit = data => {
-    console.log('sign up data', data);
-  }
+  // const handleSignUpSubmit = data => {
+  //   console.log('sign up data', data);
+  // }
 
-  const handleUpdateProfile = data => {
-    console.log('update profile', data);
-  }
+  // const handleUpdateProfile = data => {
+  //   console.log('update profile', data);
+  // }
   return (
     <>
       <h1>Form Master</h1>
+<Grandpa></Grandpa>
+
+    
       {/* <SimpleForm></SimpleForm> */}
       {/* <StatefulForm></StatefulForm> */}
       {/* <RefForm></RefForm> */}
       {/* <HookForm></HookForm> */}
-      <ReusableForm formTitle={'Sign Up'}
+      {/* <ReusableForm formTitle={'Sign Up'}
         handleSubmit={handleSignUpSubmit}>
         <div>
           <h2>Sign Up</h2>
@@ -32,12 +36,12 @@ function App() {
         formTitle={'Profile Update'}
         handleSubmit={handleUpdateProfile}
         submitBtnText='Update'>
-<div>
-  <h2>Update Profile</h2>
-  <p>Always keep your profile update</p>
-</div>
+        <div>
+          <h2>Update Profile</h2>
+          <p>Always keep your profile update</p>
+        </div>
 
-        </ReusableForm>
+      </ReusableForm> */}
     </>
   )
 }
