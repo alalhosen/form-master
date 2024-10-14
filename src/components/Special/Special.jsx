@@ -12,4 +12,4 @@ const Special = ({ asset }) => {
     );
 };
 
-export default Special;
+export default Special; 
