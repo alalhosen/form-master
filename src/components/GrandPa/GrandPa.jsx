@@ -9,7 +9,7 @@ export const MoneyContext = createContext(1000);
 
 const Grandpa = () => {
     const [money, setMoney] = useState(1000);
-    const asset = 'diamond';
+    const asset = 'diamond ring';
     return (
         <div className="grandpa">
             <h2>Grandpa</h2>
